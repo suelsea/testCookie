@@ -52,7 +52,7 @@ var app = {
 function createCookie(name, value, days) {
     if (days) {
         var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        //date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         var expires = "; expires=" + date.toGMTString();
     }
     else var expires = "";
@@ -82,16 +82,18 @@ $(document).ready(function() {
 
     alert('app init, get cookie starts');
 
-    alert('old cookie: '+ getCookie('su'));
+    alert('old cookie: ');
+
+    alert(getCookie('su'));
 
     var name = 'su';
     var value = 'vip';
-    var days = 30;
+    var days = 1;
     createCookie(name,value,days);
 
-    alert('new cookie: '+ getCookie('su'));
+    alert('new cookie: ');
 
-
+    alert(getCookie('su'));
 
 
 
