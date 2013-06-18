@@ -52,7 +52,7 @@ var app = {
 function createCookie(name, value, days) {
     if (days) {
         var date = new Date();
-        //date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         var expires = "; expires=" + date.toGMTString();
     }
     else var expires = "";
@@ -87,8 +87,9 @@ $(document).ready(function() {
     alert(getCookie('su'));
 
     var name = 'su';
-    var value = 'vip';
-    var days = 1;
+    var value = new Date();
+    var days = 10;
+
     createCookie(name,value,days);
 
     alert('new cookie: ');
