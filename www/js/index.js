@@ -83,14 +83,20 @@ $(document).ready(function() {
     alert('app init, get cookie starts');
 
     alert('bluenod cookie: ');
-    
+
     alert(getCookie('bluenod'));
 
+    alert('PHPSESSID');
 
+    alert(getCookie('PHPSESSID'));
 
-    //alert('old cookie: ');
+    alert('uvts cookie:');
 
-    //alert(getCookie('su'));
+    alert(getCookie('uvts'));
+
+    alert('old cookie: ');
+
+    alert(getCookie('su'));
 
     var name = 'su';
     var value = new Date();
