@@ -82,19 +82,25 @@ $(document).ready(function() {
 
     alert('app init, get cookie starts');
 
-    alert('old cookie: ');
+    alert('bluenod cookie: ');
+    
+    alert(getCookie('bluenod'));
 
-    alert(getCookie('su'));
+
+
+    //alert('old cookie: ');
+
+    //alert(getCookie('su'));
 
     var name = 'su';
     var value = new Date();
     var days = 10;
 
-    createCookie(name,value,days);
+    //createCookie(name,value,days);
 
-    alert('new cookie: ');
+    //alert('new cookie: ');
 
-    alert(getCookie('su'));
+    //alert(getCookie('su'));
 
 
 
