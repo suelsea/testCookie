@@ -80,9 +80,12 @@ $(document).ready(function() {
 
     alert('app init');
 
+    /*if(window.plugins.childBrowser == null)
+    {
+        ChildBrowser.install();
+    }*/
 
-
-    window.plugins.childBrowser.showWebPage('http://www.google.com',
+    //window.plugins.childBrowser.showWebPage('http://www.google.com',
                                         { showLocationBar: true });
 
     app.initialize();
