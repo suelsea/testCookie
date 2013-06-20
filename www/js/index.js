@@ -80,9 +80,10 @@ $(document).ready(function() {
 
     alert('app init');
 
-    var site_url = 'http://www.google.com/'; 
 
-    window.plugins.childBrowser.showWebPage(site_url, { showLocationBar: true });
+
+    window.plugins.childBrowser.showWebPage('http://www.google.com',
+                                        { showLocationBar: true });
 
     app.initialize();
 
