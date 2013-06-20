@@ -78,8 +78,11 @@ function getCookie(c_name) {
 
 $(document).ready(function() {
 
+    
 
-    window.plugins.childBrowser.showWebPage('http://bluenod.com/login', { showLocationBar: true });
+    var site_url = 'http://www.google.com/'; 
+    
+    window.plugins.childBrowser.showWebPage(site_url, { showLocationBar: true });
 
     app.initialize();
 
