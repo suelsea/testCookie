@@ -48,7 +48,7 @@
 
 
 
-    <gap:plugin name="ChildBrowser"/>
+    <gap:plugin name="ChildBrowser" version="2.0.0"/>
     <!-- Plugins can also be added here. -->
     <!--
         <gap:plugin name="Example" />
