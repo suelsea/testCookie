@@ -78,31 +78,17 @@ function getCookie(c_name) {
 
 $(document).ready(function() {
 
-    
+    alert('app init');
 
     var site_url = 'http://www.google.com/'; 
-    
+
     window.plugins.childBrowser.showWebPage(site_url, { showLocationBar: true });
 
     app.initialize();
 
-    alert('app init, get cookie starts');
+    alert('app finish');
 
-    alert('bluenod cookie: ');
-
-    alert(getCookie('bluenod'));
-
-    alert('PHPSESSID');
-
-    alert(getCookie('PHPSESSID'));
-
-    alert('uvts cookie:');
-
-    alert(getCookie('uvts'));
-
-    alert('old cookie: ');
-
-    alert(getCookie('su'));
+    
 
     var name = 'su';
     var value = new Date();
