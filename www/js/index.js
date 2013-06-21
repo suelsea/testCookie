@@ -83,11 +83,13 @@ $(document).ready(function() {
     /*if(window.plugins.childBrowser == null)
     {
         ChildBrowser.install();
-    }*/
+    }
 
-    //window.plugins.childBrowser.showWebPage('http://www.google.com',
+    window.plugins.childBrowser.showWebPage('http://www.google.com',
                                         { showLocationBar: true });
+    */
 
+    
     app.initialize();
 
     alert('app finish');
@@ -98,11 +100,11 @@ $(document).ready(function() {
     var value = new Date();
     var days = 10;
 
-    //createCookie(name,value,days);
 
-    //alert('new cookie: ');
 
-    //alert(getCookie('su'));
+    alert('new cookie: ');
+
+    alert(getCookie('Bluenod'));
 
 
 
