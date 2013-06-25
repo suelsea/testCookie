@@ -88,6 +88,8 @@ function checkConnection() {
             states[Connection.CELL_4G]  = 'Cell 4G connection';
             states[Connection.NONE]     = 'No network connection';
 
+            alert('test connection begins');
+
             alert('Connection type: ' + states[networkState]);
     }
 
