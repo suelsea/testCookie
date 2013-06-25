@@ -77,6 +77,9 @@ function getCookie(c_name) {
 
 
 function checkConnection() {
+
+            alert('function begins');
+
             var networkState = navigator.network.connection.type;
 
             var states = {};
