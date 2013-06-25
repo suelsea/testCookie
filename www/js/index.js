@@ -34,6 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        checkConnection();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -96,6 +97,11 @@ function checkConnection() {
             alert('Connection type: ' + states[networkState]);
     }
 
+
+
+
+
+
 $(document).ready(function() {
 
     //alert('app init');
@@ -119,7 +125,13 @@ $(document).ready(function() {
     
 
 
-    checkConnection();
+    //document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is loaded and it is now safe to make calls Cordova methods
+    //
+    /*function onDeviceReady() {
+        checkConnection();
+    }*/
     
 
     var name = 'su';
